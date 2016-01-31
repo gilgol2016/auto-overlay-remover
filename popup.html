@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+ This popup:
+ * add/remove current domain to overlay white list.
+ * run manually the overlay remover.
+ -->
+<html>
+	<head>
+		<title>Add current domain to white list</title>
+			<style>
+			body {
+				font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+				font-size: 100%;
+			}
+			div {white-space: nowrap;}
+			div#frame {
+				border:1px solid; 
+				padding: 7px;
+			}
+		</style>
+		<script src="popup.js"></script>
+	</head>
+	<body>
+		<div id="frame" style="">
+			<span>Add/Remove current domain to/from white list</span>
+			<div align="center"><br>
+				<button id="add">Add</button>&nbsp&nbsp
+				<button id="remove">Remove</button>&nbsp&nbsp
+				<button id="run">Run now</button>&nbsp&nbsp
+				<button id="close">Close</button>
+			</div>
+			<br>
+			<div id="status">&nbsp</div>
+			<div id = "options"></div>
+			<a href='faq.html'>FAQ</a>
+		</div>
+	</body>
+</html>
+
