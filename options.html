@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html>
+	<head>
+		<title>Auto Overlay Remover Options</title>
+		<style>
+			body: { padding: 10px; }
+			input[type="radio"] { margin-bottom: 5px;}
+			input[type="checkbox"] { margin: 5px 3px 5px 0px;}			
+		</style>
+		<script type="text/javascript" src="options.js"></script>
+	</head>
+	<body>
+		<b>Start running mode: </b>
+		<form style="margin-top:8px;" name="optionsForm">			
+			<input type="radio" id="rdBtn_immediately" name="runningMode" value="immediately"> Immediately<br>
+			<input type="radio" id="rdBtn_onPageLoad" name="runningMode" value="onPageLoad" checked="checked"> After page load<br>
+			<input type="radio" id="rdBtn_delayed" name="runningMode" value="delayed"> Delayed start<br>
+			<hr />
+			<input type="checkbox" id="cb_aggressiveSearch" name="aggressiveSearch" value="aggressiveSearch"> Aggressive search & remove<br>
+			<input type="checkbox" id="cb_clearWhiteList" name="clear" value="clear"> Clear white list<br><br>
+			<div style="margin-bottom:5px; font-weight: bold;">White list:</div>
+			<textarea id=whiteListText rows="4" cols="60" readonly="readonly"> Empty!</textarea>
+		</form>
+		<br>
+		<span id="status"></span>
+		<br>
+		<div align="center">
+			<button id="save">Save</button>&nbsp;&nbsp;
+			<button id="close">Close</button>
+		</div>
+	</body>
+</html>
