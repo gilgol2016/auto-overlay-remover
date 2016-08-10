@@ -6,34 +6,53 @@
  -->
 <html>
 	<head>
-		<title>Add current domain to white list</title>
 			<style>
 			body {
 				font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
 				font-size: 100%;
 			}
-			div {white-space: nowrap;}
-			div#frame {
-				border:1px solid; 
-				padding: 7px;
+			button{
+				min-width:75px; 
+				margin:auto;
+			}
+			legend{
+				color:#666666; 
+				font-size:14px;
+			}
+			#frameHeader{
+				padding:20px;
+				min-width:300px;
+				min-height:310px;
+				padding-left:20px;
+			}
+			.btnOption{ 
+				margin-left:6px; 
+				margin-bottom:4px;
+			}
+			#options, #status{
+				margin-top:6px;
 			}
 		</style>
 		<script src="popup.js"></script>
+		<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 	</head>
 	<body>
-		<div id="frame" style="">
-			<span>Add/Remove current domain to/from white list</span>
-			<div align="center"><br>
-				<button id="add">Add</button>&nbsp&nbsp
-				<button id="remove">Remove</button>&nbsp&nbsp
-				<button id="run">Run now</button>&nbsp&nbsp
-				<button id="close">Close</button>
-			</div>
-			<br>
-			<div id="status">&nbsp</div>
-			<div id = "options"></div>
-			<a href='faq.html'>FAQ</a>
-		</div>
+		<fieldset id="frameHeader">
+			<legend> Quick options </legend>
+				<div>
+					<button id="run" class='btnOption'>Run overlay now</button><br><br>
+					<fieldset>
+						<legend> Current domain </legend>
+						<input type="radio" id="rdBtn_whiteList" name="list" value="domainWhiteList" checked>White list<br>
+						<input type="radio" id="rdBtn_delayedstart" name="list" value="domainsDelayedStart">Delayed start overlay list<br><br>
+						<button class='btnOption' id="addToList">Add</button>
+						<button class='btnOption' id="removeFromList">Remove</button>	
+					</fieldset>
+					<div id = "options"></div>
+					<a href='faq.html'>FAQ</a>
+					<div id="status">&nbsp</div>
+				</div>
+		</fieldset>
 	</body>
 </html>
 
