@@ -3,23 +3,31 @@
 	<head>
 		<title>Auto Overlay Remover Options</title>
 		<style>
-			body: { padding: 10px; }
 			input[type="radio"] { margin-bottom: 5px;}
-			input[type="checkbox"] { margin: 5px 3px 5px 0px;}			
+			input[type="checkbox"] { margin: 5px 3px 5px 0px;}
+			legend{color:#666666;font-weight:bold;}
+			.divHeader{margin-bottom:5px; font-weight: bold;}
 		</style>
 		<script type="text/javascript" src="options.js"></script>
 	</head>
 	<body>
 		<b>Start running mode: </b>
-		<form style="margin-top:8px;" name="optionsForm">			
+		<form style="margin-top:8px; " name="optionsForm">			
 			<input type="radio" id="rdBtn_immediately" name="runningMode" value="immediately"> Immediately<br>
-			<input type="radio" id="rdBtn_onPageLoad" name="runningMode" value="onPageLoad" checked="checked"> After page load<br>
-			<input type="radio" id="rdBtn_delayed" name="runningMode" value="delayed"> Delayed start<br>
+			<input type="radio" id="rdBtn_onPageLoad" name="runningMode" value="onPageLoad" checked="checked"> After page loaded<br>
+			<input type="radio" id="rdBtn_delayed" name="runningMode" value="delayed"> After &nbsp
+			<select id="option_delaydTime" name="delayDuration"></select>&nbsp seconds (delayed start)<br>
 			<hr />
 			<input type="checkbox" id="cb_aggressiveSearch" name="aggressiveSearch" value="aggressiveSearch"> Aggressive search & remove<br>
-			<input type="checkbox" id="cb_clearWhiteList" name="clear" value="clear"> Clear white list<br><br>
-			<div style="margin-bottom:5px; font-weight: bold;">White list:</div>
-			<textarea id=whiteListText rows="4" cols="60" readonly="readonly"> Empty!</textarea>
+			<input type="checkbox" id="cb_clearWhiteList" name="clear" value="clearWhiteList"> Clear white list<br>
+			<input type="checkbox" id="cb_clearDelayedStartList" name="clear" value="clearDelayed"> Clear delayed start<br><br>
+				<fieldset>
+					<legend> &nbsp Saved domains (priority over 'Start running mode')&nbsp</legend>
+					<div class="divHeader">White list:</div>
+					<textarea id=whiteListText rows="4" cols="60" readonly="readonly"> Empty!</textarea><br><br>
+					<div class="divHeader">Delayed start list:</div>
+					<textarea class="domains_txt" id=domainsDelayedStart rows="4" cols="60" readonly="readonly"> Empty!</textarea>
+				</fieldset>
 		</form>
 		<br>
 		<span id="status"></span>
