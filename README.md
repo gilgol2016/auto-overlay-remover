@@ -16,14 +16,18 @@ I hope that my extension will succeed to make your web surfing less frustrating 
 
 In case you have questions, comments or suggestion you more than welcome to send me email to: removeoverlay@gmail.com
 
+# Get Overlay Blocker
+You can download and install the extenion from Chrome Web Store by clicking [here](https://chrome.google.com/webstore/detail/auto-overlay-remover/kefcbonbdcahbihclibfdeeddceiabjm?hl=en)
 
 
-
-FAQ:
+## FAQ:
 
 Q: What is Overlay?
 
+![gif demo](https://d36eyd5j1kt1m6.cloudfront.net/asset/1350x767/exit.gif)
+
 A: semi-transparent top layer on a website page which contains form, information or advertising that the website owner want you to pay attention. Some of them can be very annoying. Because there is no standard each developer does it as he wants. For example: Sometimes they don’t have 'X' to close it or it small and in a unexpected place. Overlays can appear at any time from the page load (and sometimes before it fully loaded). It can appear by event like pressing on a key from mouse or keyboard or by moving the mouse cursor.
+
 
 Q: why did I develop it?
 
