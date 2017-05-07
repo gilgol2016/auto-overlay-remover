@@ -53,8 +53,8 @@
 		<UL>
 			<LI><b>Immediately</b> – during the page is uploading.
 			<LI><b>After page load</b> – almost after the (synchronous part of) page is loaded. But remember	there is part 
-				of the site which is loaded asynchronous and there is	no way to predict when it really will be fully uploaded.
-			<LI><b>Delayed start</b> - add a delay time to solve the scenario which the overlay will appear in a longer delay.
+				of the site which is loaded asynchronous and there is no way to predict when it really will be fully uploaded.
+			<LI><b>Delayed start</b> - add a delay time, can be changed by your choice, to solve the scenario which the overlay will appear in a longer delay. Default delay is 25 seconds.
 		</UL>
 	</UL>
 	
@@ -62,9 +62,23 @@
 		A: Yes you can. In Options page, please check the option 'Clear white list' and click on 'Save' button, but do 
 		it with caution because it will delete all the domains that appears in the white list permanently.</P>
 	
-	<P><b>Q: How can I remove a specific domain from the white list I created?</b><br>
+    <P><b>Q: the overlay removed, but I can't scroll down</b><br>
+		A: that's happen because the site disable the scroll when the overlay appears.
+           The &quot;Auto Overlay Remover&quot; only removes the overlay. To avoid it you can add the site to the white list 
+           and close the overlay as it should be originally.</P>
+    
+	<P><b>Q: How can I remove a specific domain from the white list or from Delayed start list that I created?</b><br>
 		A: You can do it the following way: go to the site you want to remove and you are there press on the
-			&quot;Auto Overlay Remover&quot; icon and choose remove. It will remove the domain from the white list.</P>
+			&quot;Auto Overlay Remover&quot; icon, verify that 'White list' or 'Delayed start overlay list' accordingly, is selected and press on 'Remove' button. It will remove the domain from the white list.</P>
+	
+	<P><b>Q: What is Delayed start list?</b><br>
+		A: Delayed start list is a list of domains which the extension start to search &amp; remove after specific period of time that is chosen in the option page.</P>
+		
+	<P><b>Q: Does Delayed start list works even if other options like 'Immediately' or 'After page loaded' selected?</b><br>
+	A: Yes, if the list contains domains. It has priority over the current running mode, but only on the specific domains that added to the list.</P>
+	
+	<P><b>Q: Can domain be listed in 'White list' and 'Delayed start list'?</b><br>
+	A: Nope. domain can be only in one of the lists.</P>
 	
 	<P><b>Q: How can I contact with you?</b><br>
 		A: You can e-mail me: <u>removeoverlay@gmail.com</u></p>

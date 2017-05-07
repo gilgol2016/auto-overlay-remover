@@ -1,0 +1,8 @@
+List of domains excluded:
+
+facebook
+google
+youtube
+twitter
+gmail
+apple
